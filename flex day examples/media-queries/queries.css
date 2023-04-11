@@ -1,0 +1,38 @@
+/* No Media Query on top most section (Either desktop or mobile */
+
+/* Setting up TOC here as example */
+/* 
+1.HEADING
+
+2.FOOTER
+
+3.ANIMATIONS
+
+4. TABLET
+
+5. MOBILE
+
+*/
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+
+/* 4. TABLE START */
+
+/* 5. MOBILE START */
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .container {
+    display: block;
+  }
+}
+/* 5. MOBILE END */
+/* 4. TABLE START */
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .container {
+    display: block;
+    background-color: blue;
+  }
+}
